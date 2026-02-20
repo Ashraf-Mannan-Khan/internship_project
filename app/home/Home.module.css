@@ -1,0 +1,110 @@
+.homeContainer {
+  max-width: 100%;
+  width: 568px;
+    min-height: 100dvh;
+  background-color: #FFFFFF;
+  margin: auto;
+    font-family: var(--font-poppins);
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  padding-inline: .5rem;
+    padding-block: .5rem;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.imageContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.location {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.mapPin {
+   width: 16px;
+    height: 16px;   
+}
+.notificationContainer {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.notificationBadge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.searchInput {
+    width: 90%;
+    padding: 1rem 2rem;
+    border: 1px solid #d5d8de;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 40px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+}
+

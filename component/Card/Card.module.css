@@ -1,0 +1,68 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d5d8de;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    gap: 1rem;
+    margin-inline: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.imageContainer {
+   width: 100%;
+    height: 100%;
+   border-radius: 16px;
+    display: flex;
+    margin-left: .5rem;
+    overflow: hidden;
+}
+
+.doctorImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+   
+}   
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.loveContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.heartIcon {
+    margin-right: 1rem;
+}
+
+.specialization{
+    color: #46c2de;
+    margin-bottom: 0.5rem;
+}
+
+.availability {
+    background-color: #e6f6e6;
+    color: #18ab00 ;
+    width: fit-content;
+    padding:  0 1rem;
+    border-radius: 999px;
+}
+.about {
+    color: #889191;
+    margin-block: 0.5rem;
+}
