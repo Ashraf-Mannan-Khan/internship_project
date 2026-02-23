@@ -19,9 +19,12 @@ export default function Login() {
 
   const regex =
     /(^[^\s@]+@[^\s@]+\.[^\s@]+$)|(^(\+91|91|0)?[6-9]\d{9}$)/;
-  if (regex.test(contact)) {
+  if (regex.test(contact) && !localStorage.getItem("email")) {
+    router.push("/signUp"); 
+  } else if(regex.test(contact) && localStorage.getItem("email") === contact) {
     router.push("/auth"); 
-  } else {
+  }
+  else {
     alert("Please enter a valid email or mobile number.");  
   }
   };
