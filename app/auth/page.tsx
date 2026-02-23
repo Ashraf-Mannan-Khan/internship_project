@@ -41,7 +41,15 @@ export default function Auth() {
   
   }
   }
-  alert("Your OTP is: " + otp); // For demonstration purposes only. Remove in production.
+  const timerId = setTimeout(() => {
+      alert("Your OTP is: " + otp);; // For demonstration purposes only. Remove in production.
+  }, 2000);    
+  useEffect(() => {
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [timerId]);
+ // For demonstration purposes only. Remove in production.
 
   return (
     <div className={styles.authContainer}>
